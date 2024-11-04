@@ -8,6 +8,8 @@ import auth from './routes/auth.js';
 import mess from './routes/mess.js';
 import bodyParser from 'body-parser';
 import message from './routes/message.js';
+import session from 'express-session';
+import MongoStore from 'connect-mongo';
 app.use(cookieParser())
 app.use(express.json())
 dotenv.config();
@@ -15,7 +17,13 @@ import cors from 'cors';
 app.use(cors({
     origin: 'http://localhost:3000' // Allow your frontend to access the backend
 }));
-
+app.use(session({
+    secret: 'whothefuckareu', // Change this to a strong secret
+    resave: false,
+    saveUninitialized: false,
+    store: MongoStore.create({ mongoUrl: 'your_mongodb_connection_string' }),
+    cookie: { maxAge: 180 * 60 * 1000 } // Session expiry time in milliseconds
+  }));
 const __dirname = path.resolve();
 const PORT=process.env.PORT;
 const MongoConnect= async ()=>{
