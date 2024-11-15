@@ -10,7 +10,7 @@ Welcome to **Talkify**, a modern, real-time chat application designed to make co
 
 ## Screenshot
 
-![Talkify ChatApp Screenshot](talkify.png)  
+![Talkify ChatApp Screenshot](./talkify.png)  
 
 
 ## Installation
