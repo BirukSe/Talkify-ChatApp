@@ -5,16 +5,13 @@ Welcome to **Talkify**, a modern, real-time chat application designed to make co
 ## Features
 
 - **Real-time messaging**: Chat instantly with friends or groups without delay.
-- **User Authentication**: Secure login and user management.
-- **Group Chats**: Create and manage group chats for team collaborations.
-- **File Sharing**: Share images, documents, and files within the chat.
 - **Responsive Design**: Works smoothly on both desktop and mobile devices.
-- **Dark Mode**: Switch between light and dark themes for a better user experience.
+
 
 ## Screenshot
 
-![Talkify ChatApp Screenshot](https://ibb.co/KxzwCXK)  
-*(Replace the URL with your actual image URL)*
+![Talkify ChatApp Screenshot](talkify.png)  
+
 
 ## Installation
 
